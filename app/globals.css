@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/fonts/SanFranciscoProText/SFProText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* добавь другие веса по аналогии */
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('/fonts/gothampro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* globals.css */
+body {
+  font-family: var(--font-sf), sans-serif;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* или нужная высота */
+  /* background: black; чтобы поля не выделялись */
+}
+h1,
+h2,
+h3,
+.headline,
+.brand,
+.accent {
+  font-family: var(--font-gotham), sans-serif;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 31px 6px rgba(255, 255, 255, 0.2) inset !important;
+  -moz-box-shadow: 0px 0px 31px 6px rgba(255, 255, 255, 0.2) inset !important;
+  box-shadow: 0px 0px 31px 6px rgba(255, 255, 255, 0.2) inset !important;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-accent,
+.headline,
+.brand {
+  font-family: var(--font-gotham), sans-serif;
+  /* заголовки и акценты */
+}
+
+
+
+/* Повтори для остальных, если нужно */
+
+.test {
+  background: linear-gradient(135deg, #F0AFCD 0%, #5E4297 100%);
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.test:hover {
+  background: linear-gradient(135deg, #F0AFCD 10%, #5E4297 100%);
+}

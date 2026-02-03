@@ -1,0 +1,39 @@
+.gallery-section {
+    background: linear-gradient(to bottom, #f7fafc, #edf2f7);
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.ant-card-cover img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.ant-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.ant-card-body {
+    padding: 16px;
+}
+
+@media (max-width: 768px) {
+    .ant-card-cover img {
+        height: 150px;
+    }
+}
