@@ -23,7 +23,7 @@ export interface Analysis {
     status: 'pending' | 'ready' | 'cancelled';
     taken_at: string; // datetime
     completed_at?: string;
-    lab_values: Record<str, any>; // JSON
+    lab_values: Record<string, any>; // JSON
     file?: string;
     medical_card: {
         id: string;
